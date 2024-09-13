@@ -1,6 +1,7 @@
 import { HomeIcon, LineChartIcon, TrendingUpIcon, BarChartIcon, NewspaperIcon } from "lucide-react";
 import Index from "./pages/Index.jsx";
 import MarketOverview from "./pages/MarketOverview.jsx";
+import Trade from "./pages/Trade.jsx";
 
 /**
  * Central place for defining the navigation items. Used for navigation components and routing.
@@ -22,7 +23,7 @@ export const navItems = [
     title: "Trade",
     to: "/trade",
     icon: <TrendingUpIcon className="h-4 w-4" />,
-    page: <div>Trade Page</div>, // Placeholder for Trade page
+    page: <Trade />,
   },
   {
     title: "Portfolio",
