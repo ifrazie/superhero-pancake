@@ -1,4 +1,4 @@
-import { HomeIcon, LineChartIcon } from "lucide-react";
+import { HomeIcon, LineChartIcon, TrendingUpIcon, BarChartIcon, NewspaperIcon } from "lucide-react";
 import Index from "./pages/Index.jsx";
 import MarketOverview from "./pages/MarketOverview.jsx";
 
@@ -17,5 +17,23 @@ export const navItems = [
     to: "/market-overview",
     icon: <LineChartIcon className="h-4 w-4" />,
     page: <MarketOverview />,
+  },
+  {
+    title: "Trade",
+    to: "/trade",
+    icon: <TrendingUpIcon className="h-4 w-4" />,
+    page: <div>Trade Page</div>, // Placeholder for Trade page
+  },
+  {
+    title: "Portfolio",
+    to: "/portfolio",
+    icon: <BarChartIcon className="h-4 w-4" />,
+    page: <div>Portfolio Page</div>, // Placeholder for Portfolio page
+  },
+  {
+    title: "News",
+    to: "/news",
+    icon: <NewspaperIcon className="h-4 w-4" />,
+    page: <div>News Page</div>, // Placeholder for News page
   },
 ];
