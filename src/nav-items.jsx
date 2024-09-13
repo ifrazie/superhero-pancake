@@ -1,5 +1,6 @@
-import { HomeIcon } from "lucide-react";
+import { HomeIcon, LineChartIcon } from "lucide-react";
 import Index from "./pages/Index.jsx";
+import MarketOverview from "./pages/MarketOverview.jsx";
 
 /**
  * Central place for defining the navigation items. Used for navigation components and routing.
@@ -10,5 +11,11 @@ export const navItems = [
     to: "/",
     icon: <HomeIcon className="h-4 w-4" />,
     page: <Index />,
+  },
+  {
+    title: "Market Overview",
+    to: "/market-overview",
+    icon: <LineChartIcon className="h-4 w-4" />,
+    page: <MarketOverview />,
   },
 ];
