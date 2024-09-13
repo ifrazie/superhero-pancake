@@ -26,10 +26,12 @@ const MarketNavBar = () => {
             </div>
           </div>
           <div className="flex items-center">
-            <Avatar className="h-8 w-8">
-              <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-              <AvatarFallback>CN</AvatarFallback>
-            </Avatar>
+            <Link to="/profile">
+              <Avatar className="h-8 w-8 cursor-pointer">
+                <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
+            </Link>
           </div>
         </div>
       </div>
