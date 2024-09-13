@@ -2,6 +2,7 @@ import { HomeIcon, LineChartIcon, TrendingUpIcon, BarChartIcon, NewspaperIcon } 
 import Index from "./pages/Index.jsx";
 import MarketOverview from "./pages/MarketOverview.jsx";
 import Trade from "./pages/Trade.jsx";
+import Portfolio from "./pages/Portfolio.jsx";
 
 /**
  * Central place for defining the navigation items. Used for navigation components and routing.
@@ -29,7 +30,7 @@ export const navItems = [
     title: "Portfolio",
     to: "/portfolio",
     icon: <BarChartIcon className="h-4 w-4" />,
-    page: <div>Portfolio Page</div>, // Placeholder for Portfolio page
+    page: <Portfolio />,
   },
   {
     title: "News",
